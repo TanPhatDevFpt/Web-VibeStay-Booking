@@ -1,0 +1,263 @@
+header {
+  padding: 0 20%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0);
+}
+/* ========= TOP NAVBAR ========= */
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  & p {
+    margin: 0;
+    color: white;
+  }
+  & .money {
+    transition: 0.5s ease;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 7px;
+    & .icon-money-vn {
+      background: red;
+      padding: 0 8px;
+      border: 2px solid white;
+      border-radius: 5px;
+    }
+    & .title-money {
+      font-weight: 600;
+      font-size: 16px;
+    }
+    &:hover {
+      transition: 0.5s ease;
+      background: var(--blackopacity);
+      border-radius: 5px;
+    }
+  }
+  .promotion {
+    transition: 0.5s ease;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 7px;
+    & .title-promotion {
+      font-weight: 600;
+      font-size: 16px;
+    }
+    &:hover {
+      transition: 0.5s ease;
+      background: var(--blackopacity);
+      border-radius: 5px;
+    }
+  }
+  .cooperate {
+    transition: 0.5s ease;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 7px;
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+    &:hover {
+      transition: 0.5s ease;
+      background: var(--blackopacity);
+      border-radius: 5px;
+    }
+  }
+  .support {
+    position: relative;
+    transition: 0.5s ease;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 7px;
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+    &:hover {
+      & .mega-support {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+    &:hover {
+      transition: 0.5s ease;
+      background: var(--blackopacity);
+      border-radius: 5px;
+    }
+  }
+  /* ========= MEGA MENU SUPPORT ========= */
+  .mega-support {
+    width: 200px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.2s ease;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    & ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      & a {
+        padding: 0;
+        text-decoration: none;
+        color: black;
+        & li {
+          padding: 10px;
+        }
+        &:hover {
+          & li {
+            background: var(--blackopacity);
+          }
+        }
+      }
+    }
+  }
+  /* ========= END MEGA MENU SUPPORT ========= */
+  .my-booking {
+    transition: 0.5s ease;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 7px;
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+    &:hover {
+      transition: 0.5s ease;
+      background: var(--blackopacity);
+      border-radius: 5px;
+    }
+  }
+  .login {
+    transition: 0.3s ease;
+    background: rgb(209, 240, 255);
+    padding: 13px;
+    border-radius: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(2, 69, 144);
+    font-weight: 600;
+    &:hover {
+      transition: 0.3s ease;
+      background: rgb(163, 224, 255);
+    }
+  }
+  .register {
+    transition: 0.3s ease;
+    background: rgb(10, 154, 242);
+    padding: 13px;
+    border-radius: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    &:hover {
+      transition: 0.3s ease;
+      background: rgba(13, 130, 203, 0.744);
+    }
+  }
+  /* ========= END TOP NAVBAR ========= */
+
+  .user {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    & .icon-user {
+      i {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 4px solid transparent;
+        border-radius: 50%;
+        background:
+          linear-gradient(rgb(1, 148, 243), rgb(1, 148, 243)) padding-box,
+          linear-gradient(1.5708rad, rgb(222, 165, 119), rgb(216, 210, 0) 40%)
+            border-box;
+
+        color: white;
+      }
+    }
+    & .name-user {
+      align-items: center;
+      display: flex;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* ========= MEGA MENU USER ========= */
+    & .mega-user {
+      border-radius: 10px 10px 10px 10px;
+      width: 340px;
+      top: 50px;
+      position: absolute;
+      background: white;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: 0.2s ease;
+      & ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        & a {
+          padding: 0;
+          text-decoration: none;
+          color: black;
+          font-weight: 600;
+          & li {
+            padding: 10px;
+            & i {
+              color: rgb(0, 113, 206);
+              margin-right: 10px;
+            }
+          }
+          &:hover {
+            & li {
+              background: var(--blackopacity);
+            }
+          }
+        }
+      }
+      & h2 {
+        color: white;
+        margin: 0;
+      }
+      & .title-user {
+        padding: 18px 0px;
+        text-align: center;
+        background-image: url("https://ik.imagekit.io/tvlk/image/imageResource/2024/03/25/1711366075790-5c0ed09d9cb439e5154dfc710365742d.png?tr=q-75");
+        & .member {
+          justify-content: center;
+          display: flex;
+          gap: 5px;
+          & img {
+            object-fit: contain;
+          }
+        }
+      }
+    }
+    /* ========= END MEGA MENU USER ========= */
+
+    &:hover {
+      & .mega-user {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+  }
+}

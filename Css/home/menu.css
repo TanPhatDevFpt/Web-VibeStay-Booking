@@ -1,0 +1,259 @@
+header {
+  padding: 0 20%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0);
+}
+
+/* ========= TOP NAVBAR ========= */
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.top-navbar p {
+  margin: 0;
+  color: white;
+}
+.top-navbar .money {
+  transition: 0.5s ease;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 7px;
+}
+.top-navbar .money .icon-money-vn {
+  background: red;
+  padding: 0 8px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.top-navbar .money .title-money {
+  font-weight: 600;
+  font-size: 16px;
+}
+.top-navbar .money:hover {
+  transition: 0.5s ease;
+  background: var(--blackopacity);
+  border-radius: 5px;
+}
+.top-navbar .promotion {
+  transition: 0.5s ease;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 7px;
+}
+.top-navbar .promotion .title-promotion {
+  font-weight: 600;
+  font-size: 16px;
+}
+.top-navbar .promotion:hover {
+  transition: 0.5s ease;
+  background: var(--blackopacity);
+  border-radius: 5px;
+}
+.top-navbar .cooperate {
+  transition: 0.5s ease;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 7px;
+}
+.top-navbar .cooperate a {
+  text-decoration: none;
+  color: white;
+}
+.top-navbar .cooperate:hover {
+  transition: 0.5s ease;
+  background: var(--blackopacity);
+  border-radius: 5px;
+}
+.top-navbar .support {
+  position: relative;
+  transition: 0.5s ease;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 7px;
+}
+.top-navbar .support a {
+  text-decoration: none;
+  color: white;
+}
+.top-navbar .support:hover .mega-support {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.top-navbar .support:hover {
+  transition: 0.5s ease;
+  background: var(--blackopacity);
+  border-radius: 5px;
+}
+.top-navbar {
+  /* ========= MEGA MENU SUPPORT ========= */
+}
+.top-navbar .mega-support {
+  width: 200px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: 0.2s ease;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.top-navbar .mega-support ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.top-navbar .mega-support ul a {
+  padding: 0;
+  text-decoration: none;
+  color: black;
+}
+.top-navbar .mega-support ul a li {
+  padding: 10px;
+}
+.top-navbar .mega-support ul a:hover li {
+  background: var(--blackopacity);
+}
+.top-navbar {
+  /* ========= END MEGA MENU SUPPORT ========= */
+}
+.top-navbar .my-booking {
+  transition: 0.5s ease;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 7px;
+}
+.top-navbar .my-booking a {
+  text-decoration: none;
+  color: white;
+}
+.top-navbar .my-booking:hover {
+  transition: 0.5s ease;
+  background: var(--blackopacity);
+  border-radius: 5px;
+}
+.top-navbar .login {
+  transition: 0.3s ease;
+  background: rgb(209, 240, 255);
+  padding: 13px;
+  border-radius: 30px;
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(2, 69, 144);
+  font-weight: 600;
+}
+.top-navbar .login:hover {
+  transition: 0.3s ease;
+  background: rgb(163, 224, 255);
+}
+.top-navbar .register {
+  transition: 0.3s ease;
+  background: rgb(10, 154, 242);
+  padding: 13px;
+  border-radius: 30px;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.top-navbar .register:hover {
+  transition: 0.3s ease;
+  background: rgba(13, 130, 203, 0.744);
+}
+.top-navbar {
+  /* ========= END TOP NAVBAR ========= */
+}
+.top-navbar .user {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.top-navbar .user .icon-user i {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(rgb(1, 148, 243), rgb(1, 148, 243)) padding-box, linear-gradient(1.5708rad, rgb(222, 165, 119), rgb(216, 210, 0) 40%) border-box;
+  color: white;
+}
+.top-navbar .user .name-user {
+  align-items: center;
+  display: flex;
+  color: white;
+  font-weight: bold;
+}
+.top-navbar .user {
+  /* ========= MEGA MENU USER ========= */
+}
+.top-navbar .user .mega-user {
+  border-radius: 10px 10px 10px 10px;
+  width: 340px;
+  top: 50px;
+  position: absolute;
+  background: white;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: 0.2s ease;
+}
+.top-navbar .user .mega-user ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.top-navbar .user .mega-user ul a {
+  padding: 0;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.top-navbar .user .mega-user ul a li {
+  padding: 10px;
+}
+.top-navbar .user .mega-user ul a li i {
+  color: rgb(0, 113, 206);
+  margin-right: 10px;
+}
+.top-navbar .user .mega-user ul a:hover li {
+  background: var(--blackopacity);
+}
+.top-navbar .user .mega-user h2 {
+  color: white;
+  margin: 0;
+}
+.top-navbar .user .mega-user .title-user {
+  padding: 18px 0px;
+  text-align: center;
+  background-image: url("https://ik.imagekit.io/tvlk/image/imageResource/2024/03/25/1711366075790-5c0ed09d9cb439e5154dfc710365742d.png?tr=q-75");
+}
+.top-navbar .user .mega-user .title-user .member {
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+}
+.top-navbar .user .mega-user .title-user .member img {
+  object-fit: contain;
+}
+.top-navbar .user {
+  /* ========= END MEGA MENU USER ========= */
+}
+.top-navbar .user:hover .mega-user {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=menu.css.map */

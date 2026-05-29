@@ -1,0 +1,145 @@
+.section-1 {
+  padding: 10%;
+  background-image: url("https://ik.imagekit.io/tvlk/image/imageResource/2025/10/09/1760028631175-baba0063c39e11156f32f14ef2e77e9f.png?tr=q-75");
+}
+.section-1 .title h1 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.section-1 .select-infomation {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  justify-content: space-between;
+  display: flex;
+  gap: 4px;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+}
+.section-1 .select-infomation .search {
+  background: rgb(0, 113, 206);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.section-1 .select-infomation .select-place {
+  position: relative;
+  flex: 1;
+}
+.section-1 .select-infomation .select-place i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-icon-select);
+  z-index: 2;
+  pointer-events: none;
+}
+.section-1 .select-infomation .select-place select {
+  width: 100%;
+  padding-left: 35px;
+}
+.section-1 .select-infomation .select-checkin {
+  position: relative;
+  width: 30%;
+}
+.section-1 .select-infomation .select-checkin input {
+  width: 86%;
+  padding: 10px;
+  padding-left: 11% !important;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+}
+.section-1 .select-infomation .select-checkin input:focus {
+  border-color: var(--color-icon-select);
+}
+.section-1 .select-infomation .select-checkin i {
+  position: absolute;
+  margin: 11px;
+  color: var(--color-icon-select);
+}
+.section-1 .ss-main {
+  position: relative;
+  width: 30%;
+  padding-left: 3%;
+}
+.section-1 .fa-location-arrow {
+  position: absolute;
+  margin: 12px;
+  z-index: 2;
+  color: var(--color-icon-select);
+}
+.section-1 .guest-picker {
+  position: relative;
+}
+.section-1 .guest-picker i {
+  color: var(--color-icon-select);
+}
+.section-1 .guest-picker .guest-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 10px;
+}
+.section-1 .guest-picker .guest-dropdown {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  width: 280px;
+  z-index: 99;
+}
+.section-1 .guest-picker .guest-dropdown.show {
+  display: block;
+}
+.section-1 .guest-picker .guest-dropdown .guest-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.section-1 .guest-picker .guest-dropdown .guest-row .counter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.section-1 .guest-picker .guest-dropdown .guest-row .counter button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+.section-1 .guest-picker .guest-dropdown .guest-row .counter button:hover {
+  background: rgb(236, 248, 255);
+}
+.section-1 .guest-picker .guest-dropdown .btn-done {
+  float: right;
+  margin-top: 12px;
+  background: rgb(0, 113, 206);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=section-1.css.map */

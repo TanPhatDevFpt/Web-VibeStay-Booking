@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeStay Booking</title>
+    <link rel="stylesheet" href="./Css/home/menu.css" />
+    <link rel="stylesheet" href="./Css/base/base.css" />
+    <link rel="stylesheet" href="./Css/home/section-1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/slim-select@latest/dist/slimselect.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="top-navbar">
+        <div class="logo">
+          <a href="#">
+            <img
+              src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v4.6.0/9/97f3e7a54e9c6987283b78e016664776.svg"
+              alt="VibeStay Booking"
+              title="VibeStay Booking"
+            />
+          </a>
+        </div>
+        <div class="money">
+          <div class="icon-money-vn">
+            <div class="background-icon">
+              <svg width="25" height="20" viewBox="0 0 24 20">
+                <path
+                  d="M15.1106 16.7272L12.0129 14.404L8.93043 16.75L10.0769 12.9377L7 10.5836L10.8067 10.5507L11.9874 6.75L13.1933 10.542L17 10.547L13.9389 12.9233L15.1106 16.7272Z"
+                  fill="#FFFF00"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="title-money">
+            <p>VND | VI</p>
+          </div>
+        </div>
+        <div class="promotion">
+          <div class="icon-promotion">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/05/1736039010989-7595d02099b0647547a9e4e8ec19d408.png?tr=h-20,q-75,w-20"
+              alt="Khuyến Mãi"
+            />
+          </div>
+          <div class="title-promotion">
+            <p>Khuyến Mãi</p>
+          </div>
+        </div>
+        <div class="cooperate">
+          <a href="#">Hợp tác với chúng tôi</a>
+        </div>
+        <div class="support">
+          <a href="#">Hỗ trợ <i class="fa-solid fa-angle-down"></i></a>
+          <div class="mega-support">
+            <ul>
+              <a href="#">
+                <li><i class="fa-regular fa-circle-question"></i> Trợ Giúp</li>
+              </a>
+
+              <a href="#">
+                <li><i class="fa-regular fa-message"></i> Liên hệ chúng tôi</li>
+              </a>
+              <a href="#">
+                <li><i class="fa-regular fa-envelope"></i> Hộp thư của tôi</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <div class="my-booking">
+          <a href="#">Đặt phòng của tôi</a>
+        </div>
+
+        <!-- login -->
+        <!-- <a href="#" class="login">
+          Đăng Nhập
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </a> -->
+
+        <!-- user -->
+        <div class="user">
+          <div class="icon-user">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="name-user">
+            <p>Bùi Tấn Phát</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="mega-user">
+            <div class="title-user">
+              <h2>Bùi Tấn Phát</h2>
+              <div class="member">
+                <img
+                  src="https://ik.imagekit.io/tvlk/image/imageResource/2024/03/25/1711366056658-d64d2daf110970e5df76d394800925f0.png?tr=h-16,q-75,w-16"
+                />
+                <p>Bạn là Thành viên VibeStay</p>
+              </div>
+            </div>
+            <ul>
+              <a href="#">
+                <li><i class="fa-regular fa-circle-question"></i> Trợ Giúp</li>
+              </a>
+
+              <a href="#">
+                <li>
+                  <i class="fa-regular fa-clipboard"></i> Danh sách đặt phòng
+                </li>
+              </a>
+              <a href="#">
+                <li><i class="fa-regular fa-bell"></i> Hộp thư của tôi</li>
+              </a>
+              <a href="#">
+                <li><i class="fa-regular fa-envelope"></i> Khuyến Mãi</li>
+              </a>
+              <a href="#">
+                <li><i class="fa-solid fa-power-off"></i> Đăng xuất</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <!-- register -->
+        <!-- <a href="#" class="register"> Đăng Ký </a> -->
+      </div>
+    </header>
+
+    <!-- section 1 -->
+
+    <div class="section-1">
+      <div class="title">
+        <h1>Web du lịch VibeStay, một chạm đi bất cứ đâu</h1>
+      </div>
+        <div class="select-infomation">
+          <i class="fa-solid fa-location-arrow"></i>
+          <!-- Options -->
+          <select id="single" data-placeholder="City, Hotel, Điểm đến...">
+            <option value="" data-placeholder="true"></option>
+            <option value="value 1">Hồ Chí Minh</option>
+            <option value="value 2">Vũng Tàu</option>
+            <option value="value 3">Đà Nẵng</option>
+            <option value="value 4">Đà Lạt</option>
+          </select>
+          <!-- end Options -->
+          <div class="select-checkin">
+            <i class="fa-solid fa-calendar"></i>
+            <input type="text" id="checkin" placeholder="Chọn ngày..." />
+          </div>
+          <div class="select-people">
+            <div class="guest-picker">
+              <div class="guest-input" id="guest-toggle">
+                <i class="fa-regular fa-user"></i>
+                <span id="guest-summary">1 Adult(s), 0 Child, 1 Room</span>
+                <i class="fa-solid fa-bars"></i>
+              </div>
+
+              <div class="guest-dropdown" id="guest-dropdown">
+                <div class="guest-row">
+                  <i class="fa-regular fa-user"></i>
+                  <span>Adult</span>
+                  <div class="counter">
+                    <button onclick="change('adult', -1)">−</button>
+                    <span id="adult-count">1</span>
+                    <button onclick="change('adult', 1)">+</button>
+                  </div>
+                </div>
+                <div class="guest-row">
+                  <i class="fa-solid fa-child"></i>
+                  <span>Children</span>
+                  <div class="counter">
+                    <button onclick="change('child', -1)">−</button>
+                    <span id="child-count">0</span>
+                    <button onclick="change('child', 1)">+</button>
+                  </div>
+                </div>
+                <div class="guest-row">
+                  <i class="fa-solid fa-door-open"></i>
+                  <span>Room</span>
+                  <div class="counter">
+                    <button onclick="change('room', -1)">−</button>
+                    <span id="room-count">1</span>
+                    <button onclick="change('room', 1)">+</button>
+                  </div>
+                </div>
+                <button class="btn-done" onclick="closeDropdown()">Done</button>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+    <!-- end section 1 -->
+    <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
+    <script src="./Javascript/library/slimselect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./Javascript/library/flatpicker.js"></script>
+    <script src="./Javascript/guest-dropdown/guest-dropdown.js"></script>
+  </body>
+</html>
