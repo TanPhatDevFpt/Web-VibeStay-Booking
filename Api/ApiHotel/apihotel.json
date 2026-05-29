@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "image":"https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10019241-1798x1419-FIT_AND_TRIM-8b863abd52df5a14e92409e000613d7d.jpeg?_src=imagekit&tr=c-at_max,h-569,q-40,w-320",
+        "name":"Khách sạn Mường Thanh Grand Đà Nẵng",
+        "score": 8.5,
+        "location": "Phường An Hải Tây",
+        "sale": 51,
+        "price":"1.110.590",
+        "saleprice":"2.259.740",
+        "slug":"Muong-Thanh-Grand-Da-Nang"
+    },
+    {
+        "id": 2,
+        "image":"https://ik.imagekit.io/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/10020351-f2a372eb0530aca957e653d83de68d69.jpeg?_src=imagekit&tr=c-at_max,h-569,q-40,w-320",
+        "name":"Gold Central Hotel by Haviland",
+        "score": 8.5,
+        "location": "Hoa Thuan Dong Ward",
+        "sale": 43,
+        "price":"1.110.590",
+        "saleprice":"2.715.152",
+        "slug":"Gold-Central-Hotel-by-Haviland"
+    },
+    {
+        "id": 3,
+        "image":"https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20004789-a5cf524963f270785dc36a9659125e03.jpeg?_src=imagekit&tr=c-at_max,h-569,q-40,w-320",
+        "name":"The Herriott Hotel & Suite",
+        "score": 8.7,
+        "location": "An Hai Bac Ward",
+        "sale": 23,
+        "price":"1.635.522",
+        "saleprice":"2.117.846",
+        "slug":"The-Herriott-Hotel"
+    },
+    {
+        "id": 4,
+        "image":"https://ik.imagekit.io/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/10026691-a9313a783d221aabbd11984eb0a6cb69.jpeg?_src=imagekit&tr=c-at_max,h-569,q-40,w-320",
+        "name":"Lychee Hotel",
+        "score": 8.8,
+        "location": "Tam Thuan Ward",
+        "sale": 10,
+        "price":"815.768",
+        "saleprice":"875.758",
+        "slug":"Lychee-Hotel"
+    },
+    {
+        "id": 5,
+        "image":"https://ik.imagekit.io/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/20011694-4c950f9b429acbf55d3751e720e401db.jpeg?_src=imagekit&tr=c-at_max,h-569,q-40,w-320",
+        "name":"Orchide'es Ocean Hotel",
+        "score": 8.8,
+        "location": "Phước Mỹ",
+        "sale": 90,
+        "price":"2.076.706",
+        "saleprice":"19.926.372",
+        "slug":"Orchide-Ocean-Hotel"
+    },
+    {
+        "id": 6,
+        "image":"https://ik.imagekit.io/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/20001392-9d41562895815e3ea951e31bb5ad45e8.jpeg?_src=imagekit&tr=c-at_max,h-569,q-40,w-320",
+        "name":"La Beach Hotel",
+        "score": 8.3,
+        "location": "Phước Mỹ",
+        "sale": 86,
+        "price":"1.154.806",
+        "saleprice":"8.116.883",
+        "slug":"La-Beach-Hotel"
+    },
+    {
+        "id": 7,
+        "image":"https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20011770-35b9497e0cc027dccd92cf149c52be74.jpeg?_src=imagekit&tr=c-at_max,h-569,q-40,w-320",
+        "name":"Seashore Hotel & Apartment",
+        "score": 9.0,
+        "location": "Mân Thái",
+        "sale": 84,
+        "price":"1.414.825",
+        "saleprice":"8.914.286",
+        "slug":"Seashore-Hotel"
+    },
+    {
+        "id": 8,
+        "image":"https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10040227-46f110e75745c2b119e4dc9413a14103.jpeg?_src=imagekit&tr=c-at_max,h-569,q-40,w-320",
+        "name":"Muong Thanh Luxury Da Nang Hotel",
+        "score": 8.3,
+        "location": "Phước Mỹ",
+        "sale": 36,
+        "price":"2.158.782",
+        "saleprice":"3.350.649",
+        "slug":"Muong-Thanh-Luxury-Da-Nang-Hotel"
+    },
+    {
+        "id": 9,
+        "image":"https://ik.imagekit.io/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/20086478-fcb4ebc5a9667ded15ba368ba607bc00.png?_src=imagekit&tr=c-at_max,h-569,q-40,w-320",
+        "name":"Phuc Long Luxury Danang Hotel",
+        "score": 9.5,
+        "location": "Phước Mỹ",
+        "sale": 44,
+        "price":"2.547.768",
+        "saleprice":"4.513.393",
+        "slug":"Phuc-Long-Luxury-Danang-Hotel"
+    }
+]

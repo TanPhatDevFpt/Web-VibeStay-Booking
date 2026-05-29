@@ -1,0 +1,112 @@
+.section-3 {
+  margin-top: 50px;
+  padding-left: 18%;
+  padding-right: 18%;
+}
+.section-3 .swiper-button-next {
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 28px !important;
+  height: 28px !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.section-3 .swiper-button-prev {
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 28px !important;
+  height: 28px !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.section-3 .swiper-slide {
+  width: 18.45% !important;
+}
+.section-3 .swiper-wrapper {
+  align-items: center;
+  gap: 10px;
+}
+.section-3 .title {
+  display: flex;
+  gap: 10px;
+}
+.section-3 .title img {
+  object-fit: contain;
+}
+.section-3 .box-hotel {
+  background: white;
+  min-height: 350px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.2s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.section-3 .box-hotel .infomation {
+  padding: 4px;
+}
+.section-3 .box-hotel .infomation .money {
+  display: flex;
+  flex-direction: column;
+}
+.section-3 .box-hotel .infomation .money .saleprice {
+  color: rgb(143, 143, 143);
+  font-weight: bold;
+  font-size: 14px;
+}
+.section-3 .box-hotel .infomation .money .price {
+  color: rgb(249, 109, 1);
+  font-weight: bold;
+}
+.section-3 .box-hotel .infomation .score {
+  color: var(--color-icon-select);
+  font-weight: bold;
+}
+.section-3 .box-hotel .infomation .review .star i {
+  font-size: 10px;
+  color: rgb(255, 220, 0);
+}
+.section-3 .box-hotel .infomation .title-hotel h3 {
+  color: rgb(67, 67, 67);
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0;
+}
+.section-3 .box-hotel .image {
+  height: 213px;
+  position: relative;
+}
+.section-3 .box-hotel .image img {
+  height: 100%;
+}
+.section-3 .box-hotel .image .location {
+  position: absolute;
+  top: 0;
+  background: black;
+  font-weight: 600;
+  color: white;
+  padding: 5px;
+  display: flex;
+  border-radius: 10px 0px;
+}
+.section-3 .box-hotel .image .location img {
+  object-fit: contain;
+  margin-left: 5px;
+}
+.section-3 .box-hotel .image .title-sale {
+  position: absolute;
+  bottom: 40px;
+  padding: 3px;
+  border-radius: 5px 0px 0px 5px;
+  right: 0;
+  background: rgb(249, 109, 1);
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+.section-3 .box-hotel:hover {
+  transform: translateY(-5px);
+  transition: 0.2s ease;
+}
+
+/*# sourceMappingURL=section-3.css.map */

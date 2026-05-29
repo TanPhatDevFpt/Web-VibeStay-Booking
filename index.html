@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./Css/home/menu.css" />
     <link rel="stylesheet" href="./Css/base/base.css" />
     <link rel="stylesheet" href="./Css/home/section-1.css" />
+    <link rel="stylesheet" href="./Css/home/section-2.css" />
+    <link rel="stylesheet" href="./Css/home/section-3.css" />
+    <link rel="stylesheet" href="./Css/home/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -21,6 +24,10 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -144,69 +151,281 @@
       <div class="title">
         <h1>Web du lịch VibeStay, một chạm đi bất cứ đâu</h1>
       </div>
-        <div class="select-infomation">
-          <i class="fa-solid fa-location-arrow"></i>
-          <!-- Options -->
-          <select id="single" data-placeholder="City, Hotel, Điểm đến...">
-            <option value="" data-placeholder="true"></option>
-            <option value="value 1">Hồ Chí Minh</option>
-            <option value="value 2">Vũng Tàu</option>
-            <option value="value 3">Đà Nẵng</option>
-            <option value="value 4">Đà Lạt</option>
-          </select>
-          <!-- end Options -->
-          <div class="select-checkin">
-            <i class="fa-solid fa-calendar"></i>
-            <input type="text" id="checkin" placeholder="Chọn ngày..." />
-          </div>
-          <div class="select-people">
-            <div class="guest-picker">
-              <div class="guest-input" id="guest-toggle">
-                <i class="fa-regular fa-user"></i>
-                <span id="guest-summary">1 Adult(s), 0 Child, 1 Room</span>
-                <i class="fa-solid fa-bars"></i>
-              </div>
+      <div class="tabs">
+        <button class="item active">
+          <i class="fa-solid fa-hotel"></i>Khách Sạn
+        </button>
+        <button class="item"><i class="fa-solid fa-info"></i>Thông Tin</button>
+      </div>
 
-              <div class="guest-dropdown" id="guest-dropdown">
-                <div class="guest-row">
-                  <i class="fa-regular fa-user"></i>
-                  <span>Adult</span>
-                  <div class="counter">
-                    <button onclick="change('adult', -1)">−</button>
-                    <span id="adult-count">1</span>
-                    <button onclick="change('adult', 1)">+</button>
-                  </div>
+      <!-- filter tabs -->
+      <div class="filter-tabs">
+        <button
+          type="button"
+          name="type"
+          class="filter-tabs__item active"
+          data-value="all"
+        >
+          Tất Cả
+        </button>
+        <button type="button" class="filter-tabs__item" data-value="Khách Sạn">
+          <i class="fa-solid fa-hotel"></i>Khách Sạn
+        </button>
+        <button type="button" class="filter-tabs__item" data-value="villa">
+          <i class="fa-solid fa-archway"></i>Villa
+        </button>
+        <button type="button" class="filter-tabs__item" data-value="Căn Hộ">
+          <i class="fa-solid fa-building"></i>Căn Hộ
+        </button>
+      </div>
+      <!-- end filter tabs -->
+      <!-- select information -->
+      <div class="select-infomation">
+        <i class="fa-solid fa-location-arrow"></i>
+        <!-- Options -->
+        <select id="single" data-placeholder="City, Hotel, Điểm đến...">
+          <option value="" data-placeholder="true"></option>
+          <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+          <option value="Vũng Tàu">Vũng Tàu</option>
+          <option value="Đà Nẵng">Đà Nẵng</option>
+          <option value="Đà Lạt">Đà Lạt</option>
+        </select>
+        <!-- end Options -->
+        <div class="select-checkin">
+          <i class="fa-solid fa-calendar"></i>
+          <input type="text" id="checkin" placeholder="Chọn ngày..." />
+        </div>
+        <!-- select people -->
+        <div class="select-people">
+          <div class="guest-picker">
+            <input type="hidden" name="adults" id="input-adult" value="1" />
+            <input type="hidden" name="children" id="input-child" value="0" />
+            <input type="hidden" name="rooms" id="input-room" value="1" />
+            <div class="guest-input" id="guest-toggle">
+              <i class="fa-regular fa-user"></i>
+              <span id="guest-summary">1 Adult(s), 0 Child, 1 Room</span>
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="guest-dropdown" id="guest-dropdown">
+              <div class="guest-row">
+                <i class="fa-regular fa-user"></i>
+                <span>Adult</span>
+                <div class="counter">
+                  <button onclick="change('adult', -1)">−</button>
+                  <span id="adult-count">1</span>
+                  <button onclick="change('adult', 1)">+</button>
                 </div>
-                <div class="guest-row">
-                  <i class="fa-solid fa-child"></i>
-                  <span>Children</span>
-                  <div class="counter">
-                    <button onclick="change('child', -1)">−</button>
-                    <span id="child-count">0</span>
-                    <button onclick="change('child', 1)">+</button>
-                  </div>
+              </div>
+              <div class="guest-row">
+                <i class="fa-solid fa-child"></i>
+                <span>Children</span>
+                <div class="counter">
+                  <button onclick="change('child', -1)">−</button>
+                  <span id="child-count">0</span>
+                  <button onclick="change('child', 1)">+</button>
                 </div>
-                <div class="guest-row">
-                  <i class="fa-solid fa-door-open"></i>
-                  <span>Room</span>
-                  <div class="counter">
-                    <button onclick="change('room', -1)">−</button>
-                    <span id="room-count">1</span>
-                    <button onclick="change('room', 1)">+</button>
-                  </div>
+              </div>
+              <div class="guest-row">
+                <i class="fa-solid fa-door-open"></i>
+                <span>Room</span>
+                <div class="counter">
+                  <button onclick="change('room', -1)">−</button>
+                  <span id="room-count">1</span>
+                  <button onclick="change('room', 1)">+</button>
                 </div>
-                <button class="btn-done" onclick="closeDropdown()">Done</button>
+              </div>
+              <button class="btn-done" onclick="closeDropdown()">Done</button>
+            </div>
+          </div>
+        </div>
+        <!-- end select people -->
+        <button type="submit" class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <!-- select information -->
+      <div class="partner">
+        <img
+          src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/21/1687391728683-4d32c2a637e3997c1d2c0fda6f11d6d6.png?tr=h-25,q-75"
+        />
+        <img
+          src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/13/1686628904033-afcf910b05a6f9f01f6127ea9b19c9c5.png?tr=h-25,q-75"
+        />
+        <img
+          src="https://ik.imagekit.io/tvlk/image/imageResource/2025/04/16/1744771315158-23c606128db575bb131bc9082972f3ab.png?tr=h-25,q-75"
+        />
+        <img
+          src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/21/1687391731649-6b1a8c933148e4205d991259c2c5d3e3.png?tr=h-25,q-75"
+        />
+        <img
+          src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/21/1687391734167-6875cfbad7287f05da7e975b413d5e94.png?tr=h-25,q-75"
+        />
+      </div>
+    </div>
+    <!-- end section 1 -->
+
+    <!-- section 2 -->
+    <div class="section-2">
+      <div class="swiper section2-swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2026/05/28/1779958184786-287b83d169eb21808edeb7768e240228.jpeg?tr=q-75,w-1280"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2026/05/14/1778732443121-09a5c220618af4920a41ceadf03642a8.jpeg?tr=q-75,w-1280"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2026/04/13/1776076895906-f444f6231be4abf94c892a1ad54cb7a7.jpeg?tr=q-75,w-1280"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2026/05/13/1778641902671-4d3bc940b1c1f94dc3cda0f5cd5ced93.jpeg?tr=q-75,w-1280"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!--end section 2 -->
+
+    <!-- section 3 -->
+    <div class="section-3">
+      <div class="title">
+        <img
+          src="https://ik.imagekit.io/tvlk/image/imageResource/2025/04/19/1745042589317-0a7f50f384eecea00b595161e484fc70.png?_src=imagekit&tr=q-40,h-24"
+        />
+        <h2>Nhiều lựa chọn khách sạn</h2>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <!-- end section 3 -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="register-email">
+        <div class="layout">
+          <img
+            src="https://ik.imagekit.io/tvlk/image/imageResource/2023/07/25/1690270103782-21cfb448585a35be06cda74cae2d82aa.png?tr=q-75"
+          />
+        </div>
+        <div class="email">
+          <h2>
+            Luôn cập nhật các mẹo du lịch, đề xuất và khuyến mãi mới nhất.
+          </h2>
+          <form>
+            <input type="email" placeholder="Địa chỉ email của bạn" />
+            <button>Đăng ký</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-v2">
+        <div class="vibestay">
+          <div class="logo-vibestay">
+            <img
+              src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v4.6.0/a/ad89f39fe62c8b500e6f9a25fa4427d8.svg"
+            />
+            <div class="cooperation-vibestay">
+              Hợp tác với VibeStay
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+                      <div class="pay">
+            <h3>Đối Tác Thanh Toán</h3>
+            <div class="box-pay">
+              <div class="item">
+                <img
+                  src="https://ik.imagekit.io/tvlk/image/imageResource/2019/05/20/1558339548088-c536c896b175cb38f99a31f5dd2a989a.png?tr=h-19,q-75,w-57"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="https://ik.imagekit.io/tvlk/image/imageResource/2019/05/20/1558339578215-99466ea3d377ada2939bf2117df21b11.png?tr=h-19,q-75,w-57"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/10/1736478807774-cdbb79122765aebcf7d24eb57556413e.webp?tr=h-19,q-75,w-57"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/09/1736407489503-73395581e922112a270b9a923438d404.png?tr=h-19,q-75,w-57"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/10/1736479136374-812410948d351fd86936adcb7fbb3b3f.png?tr=h-19,q-75,w-57"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/10/1736490350569-aa858f77723a5e65ad006a06d91dac83.png?tr=h-19,q-75,w-57"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/09/1736407622371-291315073f0e649f2e24519277b8f182.png?tr=h-19,q-75,w-57"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/09/1736407704604-779d86d8202d1be33758ec0b9944e269.png?tr=h-19,q-75,w-57"
+                />
+              </div>
+              <div class="item">
+                <img
+                  src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/10/1736490355901-8daa12990ad492cc0c29f6a1c0fc351c.png?tr=h-19,q-75,w-57"
+                />
               </div>
             </div>
           </div>
-          <button type="submit" class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+          <div class="about">
+            <h3>Giới Thiệu Về VibeStay</h3>
+            <p>
+              VibeStay là nền tảng booking du lịch hiện đại giúp người dùng dễ
+              dàng tìm kiếm và đặt khách sạn, villa, căn hộ nghỉ dưỡng với mức
+              giá tốt trên toàn quốc. Với giao diện thân thiện, tốc độ nhanh và
+              trải nghiệm đặt phòng đơn giản, VibeStay mang đến giải pháp du
+              lịch tiện lợi chỉ trong vài thao tác. Người dùng có thể khám phá
+              hàng nghìn địa điểm lưu trú, so sánh giá, xem đánh giá thực tế và
+              lựa chọn không gian phù hợp cho mọi chuyến đi từ nghỉ dưỡng, công
+              tác đến du lịch cùng gia đình và bạn bè. Ngoài ra, VibeStay còn
+              cung cấp nhiều ưu đãi hấp dẫn, chương trình giảm giá và hỗ trợ
+              khách hàng nhanh chóng nhằm mang lại trải nghiệm đặt phòng an toàn
+              và đáng tin cậy. Với thông điệp “Một chạm đi bất cứ đâu”, VibeStay
+              hướng đến việc trở thành người bạn đồng hành cho mọi hành trình
+              khám phá của bạn.
+            </p>
+          </div>
         </div>
-    </div>
-    <!-- end section 1 -->
+      </div>
+    </footer>
+    <!-- end Footer -->
+
+    <script type="module" src="./Api/contain.js"></script>
+    <script type="module" src="./Api/setapi.js"></script>
+    <script type="module" src="./Api/ApiHotel/fetchapi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./Javascript/swiper/swiper.js"></script>
     <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
     <script src="./Javascript/library/slimselect.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="./Javascript/library/flatpicker.js"></script>
     <script src="./Javascript/guest-dropdown/guest-dropdown.js"></script>
+    <script src="./Javascript/filter-tabs/filter-tabs.js"></script>
+    <script src="./Javascript/tabs/tabs.js"></script>
   </body>
 </html>

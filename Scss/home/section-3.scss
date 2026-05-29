@@ -1,0 +1,117 @@
+.section-3 {
+  margin-top: 50px;
+  padding-left: 18%;
+  padding-right: 18%;
+  & .swiper-button-next {
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 28px !important;
+    height: 28px !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  & .swiper-button-prev {
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 28px !important;
+    height: 28px !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  & .swiper-slide {
+    width: 18.45% !important;
+  }
+  // gap item
+  & .swiper-wrapper {
+    align-items: center;
+    gap: 10px;
+  }
+  & .title {
+    display: flex;
+    gap: 10px;
+    & img {
+      object-fit: contain;
+    }
+  }
+  & .box-hotel {
+    background: white;
+    min-height: 350px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.2s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    & .infomation {
+      padding: 4px;
+      & .money {
+        display: flex;
+        flex-direction: column;
+        & .saleprice {
+          color: rgb(143, 143, 143);
+          font-weight: bold;
+          font-size: 14px;
+        }
+        & .price {
+          color: rgb(249, 109, 1);
+          font-weight: bold;
+        }
+      }
+      & .score {
+        color: var(--color-icon-select);
+        font-weight: bold;
+      }
+      & .review {
+        & .star {
+          & i {
+            font-size: 10px;
+            color: rgb(255, 220, 0);
+          }
+        }
+      }
+      & .title-hotel {
+        & h3 {
+          color: rgb(67, 67, 67);
+          font-weight: 600;
+          font-size: 15px;
+          margin: 0;
+        }
+      }
+    }
+    & .image {
+      height: 213px;
+      position: relative;
+      & img {
+        height: 100%;
+      }
+      & .location {
+        position: absolute;
+        top: 0;
+        background: black;
+        font-weight: 600;
+        color: white;
+        padding: 5px;
+        display: flex;
+        border-radius: 10px 0px;
+        & img {
+          object-fit: contain;
+          margin-left: 5px;
+        }
+      }
+      & .title-sale {
+        position: absolute;
+        bottom: 40px;
+        padding: 3px;
+        border-radius: 5px 0px 0px 5px;
+        right: 0;
+        background: rgb(249, 109, 1);
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+      }
+    }
+    &:hover {
+      transform: translateY(-5px);
+      transition: 0.2s ease;
+    }
+  }
+}

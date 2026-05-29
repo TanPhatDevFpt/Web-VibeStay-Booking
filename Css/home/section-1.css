@@ -1,5 +1,5 @@
 .section-1 {
-  padding: 10%;
+  padding: 5%;
   background-image: url("https://ik.imagekit.io/tvlk/image/imageResource/2025/10/09/1760028631175-baba0063c39e11156f32f14ef2e77e9f.png?tr=q-75");
 }
 .section-1 .title h1 {
@@ -7,6 +7,9 @@
   color: white;
   margin: 0;
   margin-bottom: 50px;
+}
+.section-1 {
+  /* ========= SELECT INFORMATION ========= */
 }
 .section-1 .select-infomation {
   margin-right: auto;
@@ -67,6 +70,9 @@
   margin: 11px;
   color: var(--color-icon-select);
 }
+.section-1 {
+  /* ========= END SELECT INFORMATION ========= */
+}
 .section-1 .ss-main {
   position: relative;
   width: 30%;
@@ -77,6 +83,9 @@
   margin: 12px;
   z-index: 2;
   color: var(--color-icon-select);
+}
+.section-1 {
+  /* ========= GUEST PICKER ========= */
 }
 .section-1 .guest-picker {
   position: relative;
@@ -140,6 +149,85 @@
   padding: 8px 20px;
   cursor: pointer;
   font-size: 15px;
+}
+.section-1 {
+  /* ========= END GUEST PICKER ========= */
+  /* ========= FILTER TABS ========= */
+}
+.section-1 .filter-tabs {
+  margin-right: auto;
+  margin-left: auto;
+  transition: 0.5s ease;
+  width: 80%;
+  border-top: 1px solid white;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+.section-1 .filter-tabs .filter-tabs__item {
+  background: var(--blackopacity);
+  border: none;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.section-1 .filter-tabs .filter-tabs__item i {
+  margin-right: 5px;
+}
+.section-1 .filter-tabs .active {
+  transition: 0.5s ease;
+  background: rgb(0, 113, 206);
+}
+.section-1 {
+  /* ========= END FILTER TABS ========= */
+}
+.section-1 .tabs {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  margin-bottom: 10px;
+}
+.section-1 .tabs button {
+  transition: 0.3s ease;
+  background: rgba(255, 255, 255, 0);
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+}
+.section-1 .tabs button:hover {
+  transition: 0.3s ease;
+  border: 1px solid white;
+}
+.section-1 .tabs .active {
+  background: white;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  color: black;
+}
+.section-1 .tabs .active i {
+  color: var(--color-icon-select);
+}
+.section-1 .partner {
+  overflow: hidden;
+  gap: 8px;
+  margin-top: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+  margin-right: auto;
+  margin-left: auto;
+  width: 40%;
+  display: flex;
 }
 
 /*# sourceMappingURL=section-1.css.map */
