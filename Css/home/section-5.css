@@ -1,0 +1,120 @@
+.section-5 {
+  margin-top: 50px;
+  padding-left: 18%;
+  padding-right: 18%;
+}
+.section-5 .swiper-button-next {
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 28px !important;
+  height: 28px !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.section-5 .swiper-button-prev {
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 28px !important;
+  height: 28px !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.section-5 .swiper-slide {
+  width: 18.45% !important;
+}
+.section-5 .swiper-wrapper {
+  align-items: center;
+  gap: 10px;
+}
+.section-5 .title {
+  display: flex;
+  gap: 10px;
+}
+.section-5 .title img {
+  object-fit: contain;
+}
+.section-5 .title {
+  display: flex;
+  gap: 10px;
+  color: var(--color-pink);
+}
+.section-5 .title img {
+  object-fit: contain;
+}
+.section-5 .box-hotel {
+  background: white;
+  min-height: 350px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.2s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.section-5 .box-hotel .infomation {
+  padding: 4px;
+}
+.section-5 .box-hotel .infomation .money {
+  display: flex;
+  flex-direction: column;
+}
+.section-5 .box-hotel .infomation .money .saleprice {
+  color: rgb(143, 143, 143);
+  font-weight: bold;
+  font-size: 14px;
+}
+.section-5 .box-hotel .infomation .money .price {
+  color: rgb(249, 109, 1);
+  font-weight: bold;
+}
+.section-5 .box-hotel .infomation .score {
+  color: var(--color-icon-select);
+  font-weight: bold;
+}
+.section-5 .box-hotel .infomation .review .star i {
+  font-size: 10px;
+  color: rgb(255, 220, 0);
+}
+.section-5 .box-hotel .infomation .title-hotel h3 {
+  color: rgb(67, 67, 67);
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0;
+}
+.section-5 .box-hotel .image {
+  height: 213px;
+  position: relative;
+}
+.section-5 .box-hotel .image img {
+  height: 100%;
+}
+.section-5 .box-hotel .image .location {
+  position: absolute;
+  top: 0;
+  background: var(--color-pink);
+  font-weight: 600;
+  color: white;
+  padding: 5px;
+  display: flex;
+  border-radius: 10px 0px;
+}
+.section-5 .box-hotel .image .location img {
+  object-fit: contain;
+  margin-left: 5px;
+}
+.section-5 .box-hotel .image .title-sale {
+  position: absolute;
+  bottom: 40px;
+  padding: 3px;
+  border-radius: 5px 0px 0px 5px;
+  right: 0;
+  background: rgb(249, 109, 1);
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+.section-5 .box-hotel:hover {
+  transform: translateY(-5px);
+  transition: 0.2s ease;
+}
+
+/*# sourceMappingURL=section-5.css.map */

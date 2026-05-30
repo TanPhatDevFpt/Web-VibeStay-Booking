@@ -1,10 +1,57 @@
 header {
+  transition:0.3s ease;
   width:61%;
   padding: 0 20%;
   position: fixed;
   top: 0;
   z-index: 100;
   background: rgba(255, 255, 255, 0);
+  &.active{
+    transition:0.3s ease;
+    background:white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    & .title-money{
+      & p{
+        color:black;
+      }
+    }
+    & .mega-support{
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    & .mega-user{
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    & .name-user{
+      & p{
+        color:black;
+      }
+      & i{
+        color:black;
+      }
+    }
+    & .my-booking{
+      & a{
+        color:black;
+      }
+    }
+    & .support{
+      & a{
+        color:black;
+      }
+    }
+    & .title-promotion{
+      & a{
+        & p{
+          color:black;
+        }
+      }
+    }
+    & .cooperate{
+      & a{
+        color:black;
+      }
+    }
+  }
 }
 /* ========= TOP NAVBAR ========= */
 .top-navbar {
@@ -47,6 +94,9 @@ header {
     & .title-promotion {
       font-weight: 600;
       font-size: 16px;
+      & a{
+        text-decoration: none;
+      }
     }
     &:hover {
       transition: 0.5s ease;

@@ -1,0 +1,32 @@
+.section-4{
+    margin-top: 50px;
+    padding-left:18%;
+    padding-right: 18%;
+    & .box-travel{
+        display:flex;
+        gap:20px;
+        & .item{
+            transition:0.3s ease;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            width:21%;
+            height:200px;
+            border-radius:10px;
+            overflow:hidden;
+            & .image{
+                height:130px;
+                & img{
+                    width:100%;
+                    object-fit: cover;
+                    height:100%;
+                }
+            }
+            & h3{
+                text-align: center;
+            }
+            &:hover{
+                transition:0.3s ease;
+                transform: translateY(-5px);
+            }
+        }
+    }
+}

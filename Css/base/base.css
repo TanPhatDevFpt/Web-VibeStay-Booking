@@ -9,6 +9,7 @@ body {
   font-family: "Noto Sans", sans-serif;
   --blackopacity: rgba(0, 0, 0, 0.165);
   --color-icon-select: rgb(0, 113, 206);
+  --color-pink:rgb(255, 109, 112);
 }
 
 /*# sourceMappingURL=base.css.map */

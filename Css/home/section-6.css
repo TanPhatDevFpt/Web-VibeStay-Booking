@@ -1,0 +1,24 @@
+.section-6 {
+  margin-top: 50px;
+  padding-left: 18%;
+  padding-right: 18%;
+}
+.section-6 .voucher .title {
+  color: rgb(7, 62, 104);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.section-6 .voucher .image-voucher {
+  display: flex;
+  gap: 4%;
+}
+.section-6 .voucher .image-voucher .item {
+  width: 30%;
+}
+.section-6 .voucher .image-voucher .item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=section-6.css.map */

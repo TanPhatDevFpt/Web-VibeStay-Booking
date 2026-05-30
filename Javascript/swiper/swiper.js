@@ -19,3 +19,11 @@ var swiper = new Swiper(".section-3 .mySwiper", {
         prevEl: ".swiper-button-prev",
       },
     });
+  var swiper = new Swiper(".section-5 .mySwiper", {
+  slidesPerView: 5,
+  slidesPerGroup: 4,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
