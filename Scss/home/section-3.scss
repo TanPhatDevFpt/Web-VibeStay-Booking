@@ -2,6 +2,9 @@
   margin-top: 50px;
   padding-left: 18%;
   padding-right: 18%;
+  & a{
+    text-decoration: none;
+  }
   & .swiper-button-next {
     background: white;
     padding: 10px;

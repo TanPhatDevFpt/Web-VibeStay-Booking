@@ -3,6 +3,9 @@
   padding-left: 18%;
   padding-right: 18%;
 }
+.section-3 a {
+  text-decoration: none;
+}
 .section-3 .swiper-button-next {
   background: white;
   padding: 10px;

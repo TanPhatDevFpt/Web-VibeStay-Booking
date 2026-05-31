@@ -1,12 +1,13 @@
-import {fetchapi} from "../setapi.js";
-import {API} from "../contain.js";
-const boxhotel = document.querySelector('.section-3 .swiper-wrapper');
+import { fetchapi } from "../setapi.js";
+import { API } from "../contain.js";
+const boxhotel = document.querySelector(".section-3 .swiper-wrapper");
 const api = `${API.apihotel}`;
-fetchapi(api).then((data)=>{
-    let HTML = "";
-    data.forEach((item)=>{
-        HTML += `
+fetchapi(api).then((data) => {
+  let HTML = "";
+  data.forEach((item) => {
+    HTML += `
     <div class="swiper-slide"> 
+    <a href="./detail.html">
         <div class="box-hotel">
           <div class="image">
             <img src=${item.image}>
@@ -39,8 +40,9 @@ fetchapi(api).then((data)=>{
             </div>
           </div>
         </div>
+        </a>
         </div>
         `;
-    })
-    boxhotel.innerHTML = HTML;
-})
+  });
+  boxhotel.innerHTML = HTML;
+});

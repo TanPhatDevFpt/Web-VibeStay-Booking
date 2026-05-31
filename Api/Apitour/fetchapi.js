@@ -7,6 +7,7 @@ fetchapi(api).then((data)=>{
     data.forEach((item)=>{
         HTML += `
     <div class="swiper-slide"> 
+    <a href="./detail.html">
         <div class="box-hotel">
           <div class="image">
             <img src=${item.image}>
@@ -39,6 +40,7 @@ fetchapi(api).then((data)=>{
             </div>
           </div>
         </div>
+        </a>
         </div>
         `;
     })

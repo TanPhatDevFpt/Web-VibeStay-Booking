@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeStay Booking</title>
+    <link rel="stylesheet" href="./Css/home/menu.css" />
+    <link rel="stylesheet" href="./Css/pagedetail/menu.css" />
+    <link rel="stylesheet" href="./Css/pagedetail/section-1.css" />
+    <link rel="stylesheet" href="./Css/base/base.css" />
+    <link rel="stylesheet" href="./Css/home/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/slim-select@latest/dist/slimselect.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="top-navbar">
+        <div class="logo">
+          <a href="#">
+            <img
+              src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v4.6.0/9/97f3e7a54e9c6987283b78e016664776.svg"
+              alt="VibeStay Booking"
+              title="VibeStay Booking"
+            />
+          </a>
+        </div>
+        <div class="money">
+          <div class="icon-money-vn">
+            <div class="background-icon">
+              <svg width="25" height="20" viewBox="0 0 24 20">
+                <path
+                  d="M15.1106 16.7272L12.0129 14.404L8.93043 16.75L10.0769 12.9377L7 10.5836L10.8067 10.5507L11.9874 6.75L13.1933 10.542L17 10.547L13.9389 12.9233L15.1106 16.7272Z"
+                  fill="#FFFF00"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="title-money">
+            <p>VND | VI</p>
+          </div>
+        </div>
+        <div class="promotion">
+          <div class="icon-promotion">
+            <img
+              src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/05/1736039010989-7595d02099b0647547a9e4e8ec19d408.png?tr=h-20,q-75,w-20"
+              alt="Khuyến Mãi"
+            />
+          </div>
+          <div class="title-promotion">
+            <a href="#"><p>Khuyến Mãi</p></a>
+          </div>
+        </div>
+        <div class="cooperate">
+          <a href="#">Hợp tác với chúng tôi</a>
+        </div>
+        <div class="support">
+          <a href="#">Hỗ trợ <i class="fa-solid fa-angle-down"></i></a>
+          <div class="mega-support">
+            <ul>
+              <a href="#">
+                <li><i class="fa-regular fa-circle-question"></i> Trợ Giúp</li>
+              </a>
+
+              <a href="#">
+                <li><i class="fa-regular fa-message"></i> Liên hệ chúng tôi</li>
+              </a>
+              <a href="#">
+                <li><i class="fa-regular fa-envelope"></i> Hộp thư của tôi</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <div class="my-booking">
+          <a href="#">Đặt phòng của tôi</a>
+        </div>
+
+        <!-- login -->
+        <!-- <a href="#" class="login">
+          Đăng Nhập
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </a> -->
+
+        <!-- user -->
+        <div class="user">
+          <div class="icon-user">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="name-user">
+            <p>Bùi Tấn Phát</p>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <div class="mega-user">
+            <div class="title-user">
+              <h2>Bùi Tấn Phát</h2>
+              <div class="member">
+                <img
+                  src="https://ik.imagekit.io/tvlk/image/imageResource/2024/03/25/1711366056658-d64d2daf110970e5df76d394800925f0.png?tr=h-16,q-75,w-16"
+                />
+                <p>Bạn là Thành viên VibeStay</p>
+              </div>
+            </div>
+            <ul>
+              <a href="#">
+                <li><i class="fa-regular fa-circle-question"></i> Trợ Giúp</li>
+              </a>
+
+              <a href="#">
+                <li>
+                  <i class="fa-regular fa-clipboard"></i> Danh sách đặt phòng
+                </li>
+              </a>
+              <a href="#">
+                <li><i class="fa-regular fa-bell"></i> Hộp thư của tôi</li>
+              </a>
+              <a href="#">
+                <li><i class="fa-regular fa-envelope"></i> Khuyến Mãi</li>
+              </a>
+              <a href="#">
+                <li><i class="fa-solid fa-power-off"></i> Đăng xuất</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+
+        <!-- register -->
+        <!-- <a href="#" class="register"> Đăng Ký </a> -->
+
+        <!-- select information -->
+        <div class="select-infomation">
+          <i class="fa-solid fa-location-arrow"></i>
+          <!-- Options -->
+          <select id="single" data-placeholder="City, Hotel, Điểm đến...">
+            <option value="" data-placeholder="true"></option>
+            <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+            <option value="Vũng Tàu">Vũng Tàu</option>
+            <option value="Đà Nẵng">Đà Nẵng</option>
+            <option value="Đà Lạt">Đà Lạt</option>
+          </select>
+          <!-- end Options -->
+          <div class="select-checkin">
+            <i class="fa-solid fa-calendar"></i>
+            <input type="text" id="checkin" placeholder="Chọn ngày..." />
+          </div>
+          <!-- select people -->
+          <div class="select-people">
+            <div class="guest-picker">
+              <input type="hidden" name="adults" id="input-adult" value="1" />
+              <input type="hidden" name="children" id="input-child" value="0" />
+              <input type="hidden" name="rooms" id="input-room" value="1" />
+              <div class="guest-input" id="guest-toggle">
+                <i class="fa-regular fa-user"></i>
+                <span id="guest-summary">1 Adult(s), 0 Child, 1 Room</span>
+                <i class="fa-solid fa-bars"></i>
+              </div>
+
+              <div class="guest-dropdown" id="guest-dropdown">
+                <div class="guest-row">
+                  <i class="fa-regular fa-user"></i>
+                  <span>Adult</span>
+                  <div class="counter">
+                    <button onclick="change('adult', -1)">−</button>
+                    <span id="adult-count">1</span>
+                    <button onclick="change('adult', 1)">+</button>
+                  </div>
+                </div>
+                <div class="guest-row">
+                  <i class="fa-solid fa-child"></i>
+                  <span>Children</span>
+                  <div class="counter">
+                    <button onclick="change('child', -1)">−</button>
+                    <span id="child-count">0</span>
+                    <button onclick="change('child', 1)">+</button>
+                  </div>
+                </div>
+                <div class="guest-row">
+                  <i class="fa-solid fa-door-open"></i>
+                  <span>Room</span>
+                  <div class="counter">
+                    <button onclick="change('room', -1)">−</button>
+                    <span id="room-count">1</span>
+                    <button onclick="change('room', 1)">+</button>
+                  </div>
+                </div>
+                <button class="btn-done" onclick="closeDropdown()">Done</button>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <!-- end select people -->
+        </div>
+      </div>
+    </header>
+
+    <!-- section 1 -->
+    <div class="section-1">
+      <div class="navigation">
+        <div class="breadcrumb">
+          <a href="https://cyberforce.click/index.php">Trang chủ</a>
+          <span>/</span>
+          <a href="https://cyberforce.click/index.php#post"
+            >Bài Viết Mới Nhất</a
+          >
+          <span>/</span>
+          <a href="#" class="active"
+            >VGA Giảm Giá Khi Build PC: RTX 3050 Giảm Đến 990K – Lên Cấu Hình
+            Mạnh, Giá Vẫn Hời</a
+          >
+        </div>
+      </div>
+      <div class="swiper detailswiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/10020351-4fdc0866c61d675f4150e8ad63e2f76a.jpeg?_src=imagekit&tr=c-at_max,h-360,q-80,w-640"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/10020351-e5d76adf559b4d80983adebd1fb0fc78.jpeg?_src=imagekit&tr=c-at_max,h-360,q-80,w-640"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/10020351-56331b09b6cbdc0e66f2010698ecf018.jpeg?_src=imagekit&tr=c-at_max,h-360,q-80,w-640"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/10020351-7ec06b4ec0288d477735c8b6bb414236.jpeg?_src=imagekit&tr=c-at_max,h-360,q-80,w-640"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/10020351-405fee9b0710dad79c3997b6f751eca9.jpeg?_src=imagekit&tr=c-at_max,h-360,q-80,w-640"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://ik.imagekit.io/tvlk/generic-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/10020351-e6042af786c1a9ccdac99f4aa57e9c26.jpeg?_src=imagekit&tr=c-at_max,h-360,q-40,w-640"
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="detail">
+        <div class="box-hotel">
+          <div class="title">
+            <h1>Gold Hotel Da Nang by Haviland</h1>
+            <h3>(Gold Central Hotel by Haviland)</h3>
+            <div class="hotel-star">
+              <div class="hotel">Khách sạn</div>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="select-hotel">
+            <div class="price">
+              Giá/phòng/đêm từ
+              <div class="price-detail">830.365 VND</div>
+            </div>
+            <a href="#box" class="select-room"> Chọn Phòng </a>
+          </div>
+        </div>
+        <div class="box" id="box">
+          <div class="box-score">
+            <h2>Đánh Giá</h2>
+            <div class="background-score">
+              <p class="score">8,5</p>
+            </div>
+          </div>
+          <div class="box-utilities">
+            <div class="title">
+              <h2>Tiện ích chính</h2>
+            </div>
+            <div class="utilities">
+              <div class="item">
+                <img
+                  src="https://s3-ap-southeast-1.amazonaws.com/cntres-assets-ap-southeast-1-250226768838-cf675839782fd369/imageResource/2016/12/21/1482301285653-0a04df7d3f807b32484ceec10d9681c6.png"
+                />
+                Máy lạnh
+              </div>
+              <div class="item">
+                <img
+                  src="https://s3-ap-southeast-1.amazonaws.com/cntres-assets-ap-southeast-1-250226768838-cf675839782fd369/imageResource/2016/12/21/1482301381776-c014a3111a6de5236d903c93b7647e4c.png"
+                />
+                Lễ tân 24h
+              </div>
+              <div class="item">
+                <img
+                  src="https://s3-ap-southeast-1.amazonaws.com/cntres-assets-ap-southeast-1-250226768838-cf675839782fd369/imageResource/2017/06/07/1496833756238-56e24fb64a964d38b8f393bf093a77a9.png"
+                />
+                Chỗ đậu xe
+              </div>
+              <div class="item">
+                <img
+                  src="https://s3-ap-southeast-1.amazonaws.com/cntres-assets-ap-southeast-1-250226768838-cf675839782fd369/imageResource/2017/06/07/1496833714411-48c9b7565018d02dc32837738df1c917.png"
+                />
+                Thang máy
+              </div>
+              <div class="item">
+                <img
+                  src="https://s3-ap-southeast-1.amazonaws.com/cntres-assets-ap-southeast-1-250226768838-cf675839782fd369/imageResource/2017/06/07/1496833833458-7b6ab67bc5df6ef9f2caee150aae1f43.png"
+                />
+                Wifi
+              </div>
+            </div>
+          </div>
+          <div class="box-description">
+            Lưu ý: khách sạn trước đây mang tên Gold Hotel Lưu trú tại Gold
+            Hotel Da Nang by Haviland là một lựa chọn đúng đắn khi quý khách đến
+            thăm Hòa Thuận Đông. Quầy tiếp tân 24 giờ luôn sẵn sàng phục vụ quý
+            khách từ thủ tục nhận phòng đến trả phòng hay bất kỳ yêu cầu nào.
+            Nếu cần giúp đỡ xin hãy liên hệ đội ngũ tiếp tân, chúng tôi luôn sẵn
+            sàng hỗ trợ quý khách. Sóng WiFi phủ khắp các khu vực chung của
+            khách sạn cho phép quý khách luôn kết nối với gia đình và bè bạn.
+          </div>
+        </div>
+        <div class="box-room">
+          <div class="title">
+            <h3>Phòng Superior Giường Đôi Nhìn ra Thành phố</h3>
+          </div>
+          <div class="booking-room">
+            <div class="image">
+              <img
+                src="https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20023314-5220aab7f5be48ae3ca18707e66f92f9.jpeg?_src=imagekit&tr=c-at_max,fo-auto,h-222,q-40,w-296"
+              />
+            </div>
+            <div class="booking">
+              <table border="1" style="width: 100%; border-collapse: collapse">
+                <tr>
+                  <th>Lựa chọn phòng</th>
+                  <th>Khách</th>
+                  <th>Giá/phòng/đêm</th>
+                  <th>Phòng</th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="box-content">
+                      <div class="room">
+                        Phòng Superior Giường Đôi - Giá tốt nhất
+                      </div>
+                      <div class="breakfast">Không có bữa sáng</div>
+                      <div class="bed">
+                        <i class="fa-solid fa-bed"></i>
+                        1 giường đôi
+                      </div>
+                      <div class="free-transaction">
+                        <i class="fa-solid fa-check"></i>
+                        Miễn phí huỷ dịch vụ
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="box-guest">
+                      <i class="fa-solid fa-user"></i>
+                      2
+                    </div>
+                  </td>
+                  <td>
+                    <div class="box-price">
+                      <span class="special"> Đặc biệt dành cho bạn! </span>
+                      <div class="box-price">
+                        <del class="price"> 3.636.364 VND </del>
+                        <div class="saleprice">470.766 VND</div>
+                        Không bao gồm thuế
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="room-quantity">x1</div>
+                  </td>
+                  <td>
+                    <div class="select-room">
+                      <a href="#">Chọn</a>
+                      Còn 1 phòng!
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="box-ready-room">
+          <div class="title-ready">
+            Bạn đã sẵn sàng quyết định chưa?
+            <a href="#">Đặt Phòng Ngay</a>
+          </div>
+          <div class="image">
+            <img src="https://ik.imagekit.io/tvlk/generic-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20023314-5220aab7f5be48ae3ca18707e66f92f9.jpeg?_src=imagekit&tr=c-at_max,fo-auto,h-222,q-40,w-296">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section 1 -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="register-email">
+        <div class="layout">
+          <img
+            src="https://ik.imagekit.io/tvlk/image/imageResource/2023/07/25/1690270103782-21cfb448585a35be06cda74cae2d82aa.png?tr=q-75"
+          />
+        </div>
+        <div class="email">
+          <h2>
+            Luôn cập nhật các mẹo du lịch, đề xuất và khuyến mãi mới nhất.
+          </h2>
+          <form>
+            <input type="email" placeholder="Địa chỉ email của bạn" />
+            <button>Đăng ký</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-v2">
+        <div class="vibestay">
+          <div class="logo-vibestay">
+            <img
+              src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v4.6.0/a/ad89f39fe62c8b500e6f9a25fa4427d8.svg"
+            />
+            <div class="cooperation-vibestay">
+              Hợp tác với VibeStay
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <div class="pay">
+              <h3>Đối Tác Thanh Toán</h3>
+              <div class="box-pay">
+                <div class="item">
+                  <img
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2019/05/20/1558339548088-c536c896b175cb38f99a31f5dd2a989a.png?tr=h-19,q-75,w-57"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2019/05/20/1558339578215-99466ea3d377ada2939bf2117df21b11.png?tr=h-19,q-75,w-57"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/10/1736478807774-cdbb79122765aebcf7d24eb57556413e.webp?tr=h-19,q-75,w-57"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/09/1736407489503-73395581e922112a270b9a923438d404.png?tr=h-19,q-75,w-57"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/10/1736479136374-812410948d351fd86936adcb7fbb3b3f.png?tr=h-19,q-75,w-57"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/10/1736490350569-aa858f77723a5e65ad006a06d91dac83.png?tr=h-19,q-75,w-57"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/09/1736407622371-291315073f0e649f2e24519277b8f182.png?tr=h-19,q-75,w-57"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/09/1736407704604-779d86d8202d1be33758ec0b9944e269.png?tr=h-19,q-75,w-57"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="https://ik.imagekit.io/tvlk/image/imageResource/2025/01/10/1736490355901-8daa12990ad492cc0c29f6a1c0fc351c.png?tr=h-19,q-75,w-57"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about">
+            <h3>Giới Thiệu Về VibeStay</h3>
+            <p>
+              VibeStay là nền tảng booking du lịch hiện đại giúp người dùng dễ
+              dàng tìm kiếm và đặt khách sạn, villa, căn hộ nghỉ dưỡng với mức
+              giá tốt trên toàn quốc. Với giao diện thân thiện, tốc độ nhanh và
+              trải nghiệm đặt phòng đơn giản, VibeStay mang đến giải pháp du
+              lịch tiện lợi chỉ trong vài thao tác. Người dùng có thể khám phá
+              hàng nghìn địa điểm lưu trú, so sánh giá, xem đánh giá thực tế và
+              lựa chọn không gian phù hợp cho mọi chuyến đi từ nghỉ dưỡng, công
+              tác đến du lịch cùng gia đình và bạn bè. Ngoài ra, VibeStay còn
+              cung cấp nhiều ưu đãi hấp dẫn, chương trình giảm giá và hỗ trợ
+              khách hàng nhanh chóng nhằm mang lại trải nghiệm đặt phòng an toàn
+              và đáng tin cậy. Với thông điệp “Một chạm đi bất cứ đâu”, VibeStay
+              hướng đến việc trở thành người bạn đồng hành cho mọi hành trình
+              khám phá của bạn.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end Footer -->
+
+    <script type="module" src="./Api/contain.js"></script>
+    <script type="module" src="./Api/setapi.js"></script>
+    <script type="module" src="./Api/ApiHotel/fetchapi.js"></script>
+    <script type="module" src="./Api/Apitour/fetchapi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./Javascript/swiper/swiper.js"></script>
+    <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
+    <script src="./Javascript/library/slimselect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./Javascript/library/flatpicker.js"></script>
+    <script src="./Javascript/guest-dropdown/guest-dropdown.js"></script>
+    <script src="./Javascript/filter-tabs/filter-tabs.js"></script>
+    <script src="./Javascript/tabs/tabs.js"></script>
+    <script src="./Javascript/scroll-menu/scroll-menu.js"></script>
+  </body>
+</html>

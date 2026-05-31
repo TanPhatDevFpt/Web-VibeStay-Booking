@@ -1,0 +1,185 @@
+header {
+    padding-right: 19%;
+    position: sticky;
+  background: white;
+  & .top-navbar {
+    flex-wrap: wrap;
+    & .name-user{
+        & p, i{
+        color:black;
+        }
+    }
+    & .my-booking{
+        & a{
+            color:black;
+        }
+    }
+    & .support{
+        & a{
+            color:black;
+        }
+        & .mega-support{
+            z-index:3;
+        }
+    }
+    & .title-promotion {
+      & a {
+        & p {
+          color: black;
+        }
+      }
+    }
+    & .title-money {
+      & p {
+        color: black;
+      }
+    }
+    & .cooperate {
+      & a {
+        color: black;
+      }
+    }
+  }
+  & .ss-main {
+    width: 25%;
+    height: 10%;
+    padding-left: 4px;
+  }
+  /* ========= END SELECT INFORMATION ========= */
+  & .select-infomation {
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    justify-content: space-between;
+    display: flex;
+    gap: 4px;
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+    & .search {
+      background: rgb(0, 113, 206);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    & .select-place {
+      position: relative;
+      flex: 1;
+
+      & i {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--color-icon-select);
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      & select {
+        width: 100%;
+        padding-left: 35px;
+      }
+    }
+
+    & .select-checkin {
+      position: relative;
+      width: 30%;
+      & input {
+        width: 86%;
+        padding: 10px;
+        padding-left: 11% !important;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+        outline: none;
+        cursor: pointer;
+
+        &:focus {
+          border-color: var(--color-icon-select);
+        }
+      }
+      & i {
+        position: absolute;
+        margin: 11px;
+        color: var(--color-icon-select);
+      }
+    }
+  }
+  /* ========= END SELECT INFORMATION ========= */
+
+  /* ========= GUEST PICKER ========= */
+  .guest-picker {
+    position: relative;
+    & i {
+      color: var(--color-icon-select);
+    }
+    & .guest-input {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    & .guest-dropdown {
+      display: none;
+      position: absolute;
+      top: 110%;
+      left: 0;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      padding: 16px;
+      width: 280px;
+      z-index: 99;
+
+      &.show {
+        display: block;
+      }
+
+      & .guest-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        & .counter {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          & button {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            background: white;
+            cursor: pointer;
+            font-size: 16px;
+            &:hover {
+              background: rgb(236, 248, 255);
+            }
+          }
+        }
+      }
+
+      & .btn-done {
+        float: right;
+        margin-top: 12px;
+        background: rgb(0, 113, 206);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 8px 20px;
+        cursor: pointer;
+        font-size: 15px;
+      }
+    }
+  }
+  /* ========= END GUEST PICKER ========= */
+}

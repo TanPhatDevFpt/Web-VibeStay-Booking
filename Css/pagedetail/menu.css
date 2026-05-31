@@ -1,0 +1,169 @@
+header {
+  padding-right: 19%;
+  position: sticky;
+  background: white;
+}
+header .top-navbar {
+  flex-wrap: wrap;
+}
+header .top-navbar .name-user p, header .top-navbar .name-user i {
+  color: black;
+}
+header .top-navbar .my-booking a {
+  color: black;
+}
+header .top-navbar .support a {
+  color: black;
+}
+header .top-navbar .support .mega-support {
+  z-index: 3;
+}
+header .top-navbar .title-promotion a p {
+  color: black;
+}
+header .top-navbar .title-money p {
+  color: black;
+}
+header .top-navbar .cooperate a {
+  color: black;
+}
+header .ss-main {
+  width: 25%;
+  height: 10%;
+  padding-left: 4px;
+}
+header {
+  /* ========= END SELECT INFORMATION ========= */
+}
+header .select-infomation {
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  justify-content: space-between;
+  display: flex;
+  gap: 4px;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+}
+header .select-infomation .search {
+  background: rgb(0, 113, 206);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+header .select-infomation .select-place {
+  position: relative;
+  flex: 1;
+}
+header .select-infomation .select-place i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-icon-select);
+  z-index: 2;
+  pointer-events: none;
+}
+header .select-infomation .select-place select {
+  width: 100%;
+  padding-left: 35px;
+}
+header .select-infomation .select-checkin {
+  position: relative;
+  width: 30%;
+}
+header .select-infomation .select-checkin input {
+  width: 86%;
+  padding: 10px;
+  padding-left: 11% !important;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+}
+header .select-infomation .select-checkin input:focus {
+  border-color: var(--color-icon-select);
+}
+header .select-infomation .select-checkin i {
+  position: absolute;
+  margin: 11px;
+  color: var(--color-icon-select);
+}
+header {
+  /* ========= END SELECT INFORMATION ========= */
+  /* ========= GUEST PICKER ========= */
+}
+header .guest-picker {
+  position: relative;
+}
+header .guest-picker i {
+  color: var(--color-icon-select);
+}
+header .guest-picker .guest-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 10px;
+}
+header .guest-picker .guest-dropdown {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  width: 280px;
+  z-index: 99;
+}
+header .guest-picker .guest-dropdown.show {
+  display: block;
+}
+header .guest-picker .guest-dropdown .guest-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+header .guest-picker .guest-dropdown .guest-row .counter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+header .guest-picker .guest-dropdown .guest-row .counter button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+header .guest-picker .guest-dropdown .guest-row .counter button:hover {
+  background: rgb(236, 248, 255);
+}
+header .guest-picker .guest-dropdown .btn-done {
+  float: right;
+  margin-top: 12px;
+  background: rgb(0, 113, 206);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+header {
+  /* ========= END GUEST PICKER ========= */
+}
+
+/*# sourceMappingURL=menu.css.map */
