@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./Css/home/section-3.css" />
     <link rel="stylesheet" href="./Css/home/section-4.css" />
     <link rel="stylesheet" href="./Css/home/section-5.css" />
-    <link rel="stylesheet" href="./Css/home/section-6.css">
+    <link rel="stylesheet" href="./Css/home/section-6.css" />
     <link rel="stylesheet" href="./Css/home/footer.css" />
     <link
       rel="stylesheet"
@@ -34,10 +34,96 @@
     />
   </head>
   <body>
+<!-- Nút thu gọn -->
+<div class="chat-toggle" id="chatToggle">
+  <img src="https://api.sale.ai.vn/static/uploads/avatars/45/avatar_1775499913.webp" alt="">
+  <span>Chat với AI Agent</span>
+</div>
+
+<!-- Khung chat -->
+<div class="chat-widget" id="chatWidget">
+
+  <div class="chat-header">
+
+    <div class="chat-logo">
+      <img src="https://api.sale.ai.vn/static/uploads/avatars/45/avatar_1775499913.webp" alt="">
+      <div>
+        <h3>Vibe AI</h3>
+        <p>Trực tuyến</p>
+      </div>
+    </div>
+
+    <div class="chat-actions">
+      <button><i class="fa-regular fa-lightbulb"></i></button>
+      <button><i class="fa-regular fa-star"></i></button>
+      <button><i class="fa-solid fa-expand"></i></button>
+      <button><i class="fa-solid fa-rotate-right"></i></button>
+
+      <button id="closeChat">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="chat-body">
+
+    <div class="message bot">
+      👋 Chào anh/chị! Em là Vibe AI - trợ lý tư vấn 24/7.
+      <br><br>
+      👉 Tìm khách sạn, Villa, Resort?
+      <br>
+      👉 Tour du lịch và vé tham quan?
+      <br>
+      👉 Voucher và khuyến mãi?
+      <br><br>
+      Nhắn ngay - em phản hồi liền!
+
+      <div class="time">23:28</div>
+    </div>
+
+    <div class="quick-list">
+      <button>Tư vấn khách sạn →</button>
+      <button>Tư vấn Villa →</button>
+      <button>Tour du lịch →</button>
+    </div>
+
+  </div>
+
+  <div class="chat-footer">
+
+    <button class="upload">
+      <i class="fa-regular fa-image"></i>
+    </button>
+
+    <input
+      type="text"
+      placeholder="Nhắn tin..."
+    >
+
+    <button class="send">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+  </div>
+  <div class="ai-thinking" id="aiThinking">
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <p>Vibe AI đang suy nghĩ...</p>
+</div>
+  <div class="powered">
+    Powered by Vibe AI
+  </div>
+
+</div>
+
+</div>
     <header>
       <div class="top-navbar">
         <div class="logo">
-          <a href="#">
+          <a href="./index.html">
             <img
               src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v4.6.0/9/97f3e7a54e9c6987283b78e016664776.svg"
               alt="VibeStay Booking"
@@ -125,7 +211,7 @@
                 <li><i class="fa-regular fa-circle-question"></i> Trợ Giúp</li>
               </a>
 
-              <a href="#">
+              <a href="./cart.html">
                 <li>
                   <i class="fa-regular fa-clipboard"></i> Danh sách đặt phòng
                 </li>
@@ -508,6 +594,7 @@
     <script type="module" src="./Api/setapi.js"></script>
     <script type="module" src="./Api/ApiHotel/fetchapi.js"></script>
     <script type="module" src="./Api/Apitour/fetchapi.js"></script>
+    <script src="./Javascript/AI ChatBot/chatbot.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./Javascript/swiper/swiper.js"></script>
     <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>

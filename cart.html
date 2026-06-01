@@ -6,8 +6,8 @@
     <title>VibeStay Booking</title>
     <link rel="stylesheet" href="./Css/home/menu.css" />
     <link rel="stylesheet" href="./Css/pagedetail/menu.css" />
-    <link rel="stylesheet" href="./Css/search/search.css" />
     <link rel="stylesheet" href="./Css/base/base.css" />
+    <link rel="stylesheet" href="./Css/cart/cart.css" />
     <link rel="stylesheet" href="./Css/home/footer.css" />
     <link
       rel="stylesheet"
@@ -141,205 +141,64 @@
 
         <!-- register -->
         <!-- <a href="#" class="register"> Đăng Ký </a> -->
-
-        <!-- select information -->
-        <div class="select-infomation">
-          <i class="fa-solid fa-location-arrow"></i>
-          <!-- Options -->
-          <select id="single" data-placeholder="City, Hotel, Điểm đến...">
-            <option value="" data-placeholder="true"></option>
-            <option value="Hồ Chí Minh">Hồ Chí Minh</option>
-            <option value="Vũng Tàu">Vũng Tàu</option>
-            <option value="Đà Nẵng">Đà Nẵng</option>
-            <option value="Đà Lạt">Đà Lạt</option>
-          </select>
-          <!-- end Options -->
-          <div class="select-checkin">
-            <i class="fa-solid fa-calendar"></i>
-            <input type="text" id="checkin" placeholder="Chọn ngày..." />
-          </div>
-          <!-- select people -->
-          <div class="select-people">
-            <div class="guest-picker">
-              <input type="hidden" name="adults" id="input-adult" value="1" />
-              <input type="hidden" name="children" id="input-child" value="0" />
-              <input type="hidden" name="rooms" id="input-room" value="1" />
-              <div class="guest-input" id="guest-toggle">
-                <i class="fa-regular fa-user"></i>
-                <span id="guest-summary">1 Adult(s), 0 Child, 1 Room</span>
-                <i class="fa-solid fa-bars"></i>
-              </div>
-
-              <div class="guest-dropdown" id="guest-dropdown">
-                <div class="guest-row">
-                  <i class="fa-regular fa-user"></i>
-                  <span>Adult</span>
-                  <div class="counter">
-                    <button onclick="change('adult', -1)">−</button>
-                    <span id="adult-count">1</span>
-                    <button onclick="change('adult', 1)">+</button>
-                  </div>
-                </div>
-                <div class="guest-row">
-                  <i class="fa-solid fa-child"></i>
-                  <span>Children</span>
-                  <div class="counter">
-                    <button onclick="change('child', -1)">−</button>
-                    <span id="child-count">0</span>
-                    <button onclick="change('child', 1)">+</button>
-                  </div>
-                </div>
-                <div class="guest-row">
-                  <i class="fa-solid fa-door-open"></i>
-                  <span>Room</span>
-                  <div class="counter">
-                    <button onclick="change('room', -1)">−</button>
-                    <span id="room-count">1</span>
-                    <button onclick="change('room', 1)">+</button>
-                  </div>
-                </div>
-                <button class="btn-done" onclick="closeDropdown()">Done</button>
-              </div>
-            </div>
-          </div>
-          <button type="submit" class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <!-- end select people -->
-        </div>
       </div>
     </header>
 
-    <div class="section-1">
-      <div class="box-filter">
-        <div class="filter-price">
-          <div class="price">Khoảng giá</div>
-          <div class="filter">
-            <form method="GET" action="san-pham.php">
-              <div class="price-range">
-                <div class="slider-wrapper">
-                  <div class="track-fill" id="trackFill"></div>
-                  <input
-                    type="range"
-                    min="0"
-                    max="24000000"
-                    value="0"
-                    id="rangeMin"
-                  />
-                  <input
-                    type="range"
-                    min="0"
-                    max="24000000"
-                    value="24000000"
-                    id="rangeMax"
-                  />
-                </div>
-                <div class="price-inputs">
-                  <div class="price-box">
-                    <input type="text" id="inputMin" name="min" value="0" />
-                    <span>VND</span>
-                  </div>
-                  <div class="price-box">
-                    <input
-                      type="text"
-                      id="inputMax"
-                      name="max"
-                      value="24000000"
-                    />
-                    <span>VND</span>
-                  </div>
-                  <div class="submit">
-                    <button type="submit">Lọc</button>
-                  </div>
-                </div>
-                <div class="filter-sort">
-                  <input
-                    type="checkbox"
-                    id="breakfast"
-                    name="filters[]"
-                    value="breakfast"
-                  />
-                  <label for="breakfast"> Có bữa ăn sáng</label>
-                  <input
-                    type="checkbox"
-                    id="review"
-                    name="filters[]"
-                    value="review"
-                  />
-                  <label for="review"> 4 - 5 sao giá tốt</label>
-                  <input
-                    type="checkbox"
-                    id="family"
-                    name="filters[]"
-                    value="family"
-                  />
-                  <label for="family"> Phù Hợp Gia Đình</label>
-                  <input
-                    type="checkbox"
-                    id="villa"
-                    name="filters[]"
-                    value="villa"
-                  />
-                  <label for="villa"> Villa</label>
-                  <input
-                    type="checkbox"
-                    id="homestay"
-                    name="filters[]"
-                    value="homestay"
-                  />
-                  <label for="homestay"> Homestay</label>
-                </div>
-              </div>
-            </form>
+    <div class="profile-user">
+      <div class="background-user">
+        <img
+          src="https://ik.imagekit.io/tvlk/image/imageResource/2021/04/07/1617779342366-12f9422fd06a87392a2668ade5717a1d.png?tr=h-320,q-75"
+        />
+      </div>
+      <div class="infomation-user">
+        <div class="user">
+          <div class="logo-user">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="name-user">
+            <h2>Tấn Phát</h2>
           </div>
         </div>
       </div>
-      <div class="box-room">
-        <div class="result-room">Kết Quả Tìm Kiếm Đà Lạt</div>
-        <div class="box-hotel">
+    </div>
+
+    <div class="box-hotel">
+      <a class="link" href="#">
+        <div class="hotel-infomation">
           <div class="image">
             <img
-              src="https://ik.imagekit.io/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/10020351-4fdc0866c61d675f4150e8ad63e2f76a.jpeg?_src=imagekit&tr=c-at_max,h-360,q-80,w-640"
+              src="https://ik.imagekit.io/tvlk/apr-asset/Ixf4aptF5N2Qdfmh4fGGYhTN274kJXuNMkUAzpL5HuD9jzSxIGG5kZNhhHY-p7nw/hotel/asset/20071243-9ab2089aa972206f69d99b3f4417acb0.jpeg?_src=imagekit&tr=h-112,q-40,w-96"
             />
           </div>
-          <div class="content">
-            <div class="title">
-              The Luxe Hotel Dalat
-              <div class="score">8.5/10</div>
-            </div>
-            <div class="hotel">
-              <div class="icon-hotel">
-                <img
-                  src="https://ik.imagekit.io/tvlk/image/imageResource/2023/03/28/1679986877455-c9fba4a49268f20248a89a0b68c86973.png?tr=h-12,q-75,w-12"
-                />
-                Khách sạn
-              </div>
-              <div class="hotel-star">
+          <div class="title">
+            <div class="name-hotel">Lavender Homestay Mang Den</div>
+            <div class="box-score">
+              <div class="star">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
               </div>
+              <span>|</span>
+              <div class="score">9.1/10</div>
             </div>
             <div class="hotel-location">
-              <i class="fa-solid fa-location-dot"></i>
-              Phường 3, Đà Lạt
+              <img
+                src="https://ik.imagekit.io/tvlk/image/imageResource/2018/09/25/1537850816445-9f18a4895b85bad2b20803b84644b124.png?tr=q-75"
+              />
+              Kon Plong District, Kon Tum Province
             </div>
+            <div class="price">652.970 VND</div>
           </div>
-          <div class="select-room">
-            <div class="box-select">
-              <div class="like-room">
-                <img
-                  src="https://ik.imagekit.io/tvlk/image/imageResource/2025/09/04/1756959010710-89d95216d1ef2f478c1f1402538c4e4c.png?tr=h-16,q-75,w-16"
-                />
-                Phòng Tốt
-              </div>
-              <div class="price">428.138 VND</div>
-              <a href="#" class="select"> Chọn Phòng </a>
-            </div>
-          </div>
+          <form action="delete-cart.php" method="POST">
+            <button type="submit" class="favourite">
+              <img
+                src="https://d1785e74lyxkqq.cloudfront.net/_next/static/v4.6.0/9/96e5ede556dccd5ed46eb01deabf6dbb.svg"
+              />
+            </button>
+          </form>
         </div>
-      </div>
+      </a>
     </div>
 
     <!-- Footer -->
@@ -444,7 +303,10 @@
     </footer>
     <!-- end Footer -->
 
-    <script src="./Javascript/filter-price/filter-price.js"></script>
+    <script type="module" src="./Api/contain.js"></script>
+    <script type="module" src="./Api/setapi.js"></script>
+    <script type="module" src="./Api/ApiHotel/fetchapi.js"></script>
+    <script type="module" src="./Api/Apitour/fetchapi.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./Javascript/swiper/swiper.js"></script>
     <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
